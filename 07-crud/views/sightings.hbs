@@ -14,6 +14,13 @@
         </tr>
     </thead>
 
+    <!-- 
+        The two buttons, edit and delete are created each time the loop goes over each food item 
+        in the for-loop. There will be a specific link tied to each button when the are created for
+        each food item that will immediately go to a website with the given domain:
+        /food_sighting/edit/{{this._id}}, Upon reaching the domain, a Get request will be triggered.
+    -->
+    
     {{#each foodSightings}}
     <tr>
         <td>{{this._id}}</td>
